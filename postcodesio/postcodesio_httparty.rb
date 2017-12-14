@@ -15,12 +15,12 @@ class Postcodesio
   end
 
   def get_result
-    get_single_postcode('ha86lh')['result']
+    get_single_postcode('PH152AF')['result']
   end
 
 end
 
 x = Postcodesio.new
 
-puts x.get_single_postcode('ha86lh')
+puts x.get_single_postcode('PH152AF')
 # puts x.get_multiple_postcodes(["ha86lh", "bs11dq"])
