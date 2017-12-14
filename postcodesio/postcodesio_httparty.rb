@@ -6,6 +6,12 @@ class Postcodesio
 
   base_uri 'https://api.postcodes.io'
 
+  attr_accessor :postcode
+
+  def initialize
+    @postcode = 'ha86lh'
+  end
+
   def get_single_postcode(postcode)
     JSON.parse(self.class.get("/postcodes/#{postcode}").body)
   end
@@ -18,5 +24,5 @@ end
 
 x = Postcodesio.new
 
-puts x.get_single_postcode('ha86lh')
+# puts x.get_single_postcode('ha86lh')
 # puts x.get_multiple_postcodes(["ha86lh", "bs85bb", "bs11dq"])
