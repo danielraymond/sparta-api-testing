@@ -8,7 +8,7 @@ class Postcodesio
   end
 
   def multiple_postcode_service
-    MultiPostcodeService.new
+    MultiPostcodesService.new
   end
 
 end
